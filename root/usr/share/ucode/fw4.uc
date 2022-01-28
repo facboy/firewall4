@@ -1294,6 +1294,9 @@ return {
 			if (!day)
 				return null;
 
+			// capitalize day
+			day = uc(substr(day, 0, 1)) + substr(day, 1, length(day));
+
 			rv.days = rv.days || {};
 			rv.days[day] = true;
 		}
